@@ -8,7 +8,7 @@ SignSteps reuses SignSpeak's in-browser ASL fingerspelling recognizer so a signi
 
 ## Demo video
 
-[Watch on Google Drive](https://drive.google.com/file/d/1LKhC35bg-1ncy-tj3sCn9JoLjn-5DOq6/view?usp=drivesdk) (2:53, with voice-over and captions)
+[Watch on Google Drive](https://drive.google.com/file/d/1pAwk2xQ_i7S9wklyN3Fb9knkWVeF6zhe/view?usp=drivesdk) (2:53, with voice-over and captions)
 
 **Reasoning challenge:** [docs/reasoning-challenge.pdf](docs/reasoning-challenge.pdf)
 
