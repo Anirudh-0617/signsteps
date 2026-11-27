@@ -6,7 +6,11 @@ SignSteps reuses SignSpeak's in-browser ASL fingerspelling recognizer so a signi
 
 > **Language scope:** This prototype recognizes **ASL fingerspelling** (`public/models/fingerspell_asl`). Children in India mostly use **Indian Sign Language (ISL)**, which uses two-handed fingerspelling. SignSteps does not claim ISL support; training an ISL model with Deaf educators is the primary next step.
 
-**Demo video (2:53, voice-over and captions):** [Watch on Google Drive](https://drive.google.com/file/d/1LKhC35bg-1ncy-tj3sCn9JoLjn-5DOq6/view?usp=drivesdk)
+## Demo video
+
+[Watch on Google Drive](https://drive.google.com/file/d/1LKhC35bg-1ncy-tj3sCn9JoLjn-5DOq6/view?usp=drivesdk) (2:53, with voice-over and captions)
+
+**Reasoning challenge:** [docs/reasoning-challenge.pdf](docs/reasoning-challenge.pdf)
 
 ---
 
@@ -15,14 +19,6 @@ SignSteps reuses SignSpeak's in-browser ASL fingerspelling recognizer so a signi
 - **Sign-a-Word Practice (`/`):** Large letter boxes, emoji picture cue, live webcam landmark overlay, smooth hold bar, adjustable hold time (`0.4`–`1.5 s`, default `0.8 s`), adjustable confidence (`40%`–`85%`), mirror-camera toggle, soft amber hints on mismatches, **Type a letter**, **Skip letter**, in-round retry for missed words, and preserved tab progress, followed by a 3-sentence story with practised words (including plurals/possessives) highlighted.
 - **Teacher Lesson Generator & Review:** Dropdown-only inputs (8 themes, levels `1`–`3`, `5`–`8` words) call FastAPI + Gemini (`google-genai`), validated deterministically before the teacher edits words, sentences, or the story and approves. Built-in fallback lists work even when AI is unconfigured or unavailable (with accurate fallback banners and bounded backend time budget).
 - **Adaptive Practice & Progress View:** Child profile with nickname (no real names) and emoji avatar, Leitner-box (`1`–`4`) spaced repetition in `localStorage`, plus a parent/teacher view showing attempts, clean spellings, per-word and letter accuracy, average time per word (excluding model load), mastery box, and the 3 hardest letters.
-
-## Screenshots
-
-- _Placeholder: Practice view (word boxes, webcam landmarks, amber hint)_
-- _Placeholder: Teacher create & review view (generated draft + inline validation)_
-- _Placeholder: Progress view (hardest letters + mastery table)_
-
----
 
 ## Setup and Run
 
