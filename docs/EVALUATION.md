@@ -43,30 +43,28 @@ Every returned lesson passed `validate_lesson`.
 
 ## 3. Live Recognizer Evaluation (Webcam)
 
-**Status:** Pending manual test on Mac webcam under stated lighting.
+**Status:** One informal run observed from a screen recording. The planned 45-attempt test below has not been run.
 
 SignSpeak's `public/models/fingerspell_asl` model achieved **98.3% on the Kaggle holdout**, while live webcam accuracy is expected to be lower—especially on lookalike handshapes (`M`/`N`/`S`/`T` and `U`/`V`/`R`).
 
-### Protocol
+**Earlier testing in SignSpeak:** the author also tried this recognizer by hand while building SignSpeak. No attempt counts or timings were recorded, so no figures are reported, and it was not a test of SignSteps.
+
+### Protocol (planned, not yet run)
 - **Environment:** State room lighting (e.g., daylight / overhead lamp), camera distance, and signing hand (left/right). SignSteps records per-word elapsed time and clean-spelling rate in the **Progress** tab (`Avg time`, `Tries`, `Signed cleanly`) so you can read the numbers directly after running the test.
 - **Test set:** 3 words per level × 5 attempts each (`45` word attempts total):
   - Level 1 (3–6 letters, no double letters, no `J`/`Z`): e.g., `CAT`, `DOG`, `FISH`
   - Level 2 (3–6 letters, no `J`/`Z`): e.g., `APPLE`, `BREAD`, `GREEN`
   - Level 3 (3–8 letters, includes `J`/`Z` or double letters): e.g., `JAZZ`, `ZEBRA`, `SCHOOL`
 
-### Results Table (fill after live test)
+### Observed run (one signer: the author; one word; one attempt)
 
-| Level | Word | Attempts | Clean Spellings | Letters Recognized First Try | Avg Time / Word (s) | Notes (e.g. confusions) |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | | 5 | | | | |
-| 1 | | 5 | | | | |
-| 1 | | 5 | | | | |
-| 2 | | 5 | | | | |
-| 2 | | 5 | | | | |
-| 2 | | 5 | | | | |
-| 3 | | 5 | | | | |
-| 3 | | 5 | | | | |
-| 3 | | 5 | | | | |
+Settings shown on screen: hold time 0.8 s, confidence 60%, mirror camera on, indoor room. Times are approximate, read from the recording.
+
+| Level | Word | Result |
+| --- | --- | --- |
+| 1 | `COW` | All three letters were eventually signed and accepted. `C` took about 44 s from the start of the recording and was repeatedly read as `D` or `X`, with the amber hint shown. `O` and `W` followed within about 10 s. |
+
+This is not an accuracy measurement. It shows one real failure (`C` confused with `D` and `X`) and that the child can still finish the word.
 
 ---
 

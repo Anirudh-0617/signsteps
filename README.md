@@ -72,7 +72,7 @@ npm run lint
 - [docs/PROBLEM.md](docs/PROBLEM.md) — Problem statement, users, barriers, user journey, and accessibility rules
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — User-flow and technical architecture Mermaid diagrams, recognition pipeline, and privacy boundary
 - [docs/DECISIONS.md](docs/DECISIONS.md) — Engineering decisions with alternatives and answers to the 8 PS4 reasoning questions
-- [docs/EVALUATION.md](docs/EVALUATION.md) — Verified automated test results, live `eval_lessons.py` results (`gemini-3.5-flash-lite`, 24 lessons: 79% first try, 0% regenerated, 21% fallback), and webcam evaluation template
+- [docs/EVALUATION.md](docs/EVALUATION.md) — Verified automated test results, live `eval_lessons.py` results (`gemini-3.5-flash-lite`, 24 lessons: 79% first try, 0% regenerated, 21% fallback), and one observed webcam run
 - [docs/EVALUATION_LESSONS.md](docs/EVALUATION_LESSONS.md) — Full 24-lesson output table from `backend/eval_lessons.py`
 
 ---
@@ -83,7 +83,7 @@ npm run lint
 - ASL fingerspelling only; two-handed ISL is not yet supported (though the 178-dim feature vector already reserves 126 dimensions for both hands).
 - Progress is stored in `localStorage` on a single device with no teacher accounts or cloud sync.
 - The safety blocklist is a small static list; teacher review is the primary safety gate.
-- Evaluation so far is automated/synthetic; testing with Deaf educators and signing children has not yet been conducted.
+- Live webcam evaluation is limited to one observed run by the author (`C` was repeatedly misread before being accepted); the 45-attempt test and testing with Deaf educators and signing children have not been done.
 
 ## AI Tool Disclosure
 
