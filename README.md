@@ -6,6 +6,8 @@ SignSteps reuses SignSpeak's in-browser ASL fingerspelling recognizer so a signi
 
 > **Language scope:** This prototype recognizes **ASL fingerspelling** (`public/models/fingerspell_asl`). Children in India mostly use **Indian Sign Language (ISL)**, which uses two-handed fingerspelling. SignSteps does not claim ISL support; training an ISL model with Deaf educators is the primary next step.
 
+**Demo video (2:53, voice-over and captions):** [Watch on Google Drive](https://drive.google.com/file/d/1LKhC35bg-1ncy-tj3sCn9JoLjn-5DOq6/view?usp=drivesdk)
+
 ---
 
 ## Key Features
